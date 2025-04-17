@@ -1,0 +1,52 @@
+<div class="main">
+    <app-navbar></app-navbar>
+    <div class="mainpage">
+        <div class="left">
+            <div>
+                <h4>{{'Full_Stack_Developer' | translate}}</h4>
+            </div>
+            <div>
+                <h3>{{ 'Hello,_Im' | translate }}</h3>
+                <h3 style="color: #4FD1C5;">{{selectedHome?.name}}</h3></div>
+            <div>
+                <h6>{{'Home_description' | translate}}</h6>
+            </div>
+            <div class="links">
+                <div class="button"> 
+                    <button (click)="downloadCV()">{{ 'Download_CV' | translate }}</button>
+                </div>
+                <div class="images">
+                    <div class="item" *ngIf="selectedHome?.gitHub != null">
+                        <a href="{{ selectedHome?.gitHub }}" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/github.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item" *ngIf="selectedHome?.gitHub == null">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/github.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item" *ngIf="selectedHome?.linkedIn != null">
+                        <a href="{{ selectedHome?.linkedIn }}" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/linkedin.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item" *ngIf="selectedHome?.linkedIn == null">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/linkedin.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/whatsApp.png" alt="">
+                    </div>
+                    <div class="item"><img src="assets/images/gmail.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img *ngIf="selectedHome?.filephoto" 
+                [src]="selectedHome?.filephoto" 
+                alt="{{selectedHome?.namePhoto}}">
+        </div>
+    </div>
+</div>

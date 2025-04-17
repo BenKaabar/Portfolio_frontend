@@ -1,0 +1,58 @@
+<div class="main">
+    <div><h3>{{"My_Education" | translate}}</h3></div>
+    <div class="details">
+        <div class="item">
+            <div class="card" *ngFor="let education of allResumeEducation">
+                <div class="date">
+                    <h5>
+                        {{education.title | translate}}
+                    </h5>
+                </div>
+                <div class="title">
+                    <h6>
+                        {{education.date | translate}}
+                    </h6>
+                </div>
+                <div class="description">
+                    <h6>
+                        {{education.description | translate}}
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- <div class="card">
+                <div class="date">
+                    <h5>
+                        {{"2019-2022" | translate}}
+                    </h5>
+                </div>
+                <div class="title">
+                    <h6>
+                        {{"Bachelor_degree" | translate}}
+                    </h6>
+                </div>
+                <div class="description">
+                    <h6>
+                        {{"Telecommunications_Degree" | translate}}
+                    </h6>
+                </div>
+            </div> -->
+        <!-- <div class="card">
+            <div class="date">
+                <h5>
+                    {{"2018-2019" | translate}}
+                </h5>
+            </div>
+            <div class="title">
+                <h6>
+                    {{"High_school_Degree" | translate}}
+                </h6>
+            </div>
+            <div class="description">
+                <h6>
+                    {{"Baccalaureate_Description" | translate}}
+                </h6>
+            </div>
+        </div> -->

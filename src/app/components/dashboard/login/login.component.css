@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F242D;
+    height: 100vh;
+    width: 100%;
+}
+.content{
+    background-color: #2D3748;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h3{
+    color: #4FD1C5;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: #4FD1C5;
+    color: white;
+    padding: 6px 10%;
+    border-radius: 12px;
+}

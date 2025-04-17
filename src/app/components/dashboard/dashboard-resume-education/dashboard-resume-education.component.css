@@ -1,0 +1,141 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.addResumeEducation{
+    display: flex;
+    margin: 8px 0px;
+
+}
+.addResumeEducation svg{color: #4FD1C5;}
+/* left */
+.left{
+    width: 30%;
+    background-color: #4FD1C5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftdetail{
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h4{
+    color: white;
+}
+.leftdetail .item{
+    cursor: pointer;
+}
+
+
+/* right */
+.right{
+    width: 70%;
+    height: 100%;
+    background-color: #1F242D;
+    padding: 5%;
+
+}
+.rightdetail{
+    width: 100%;
+    height: 100%;
+    background-color: #2D3748;
+    padding: 20px;
+}
+.rightdetail h2{
+    color: white;
+}
+
+.table{
+    width: 100%;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid white;
+  }
+table{
+    width: 100%;
+}
+th, td{
+    color: white;
+}
+.action{
+    display: flex;
+    justify-content: space-evenly;
+}
+svg{
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.page-item a{
+    cursor: pointer;
+}
+.page-item.disabled{
+    cursor: not-allowed;
+}
+
+/* modal consult*/
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.head h2{
+    color: black;
+    margin: 0px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.body .item{
+    display: flex;
+
+}
+.body .item strong{
+    margin-right: 10px;
+}
+
+/* modal create */
+.bodycreate .item{
+    display: flex;
+    margin: 6px 0px;
+}
+.bodycreate label{
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+hr{
+    margin-top: 6px;
+    background-color: #4FD1C5;
+    height: 2px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0px;
+}
+.footer input{
+    background-color: #4FD1C5;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.footer input:disabled{
+    background-color: rgba(79, 209, 197,0.5);
+    cursor: not-allowed;
+}

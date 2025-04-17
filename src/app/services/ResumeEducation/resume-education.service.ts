@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ResumeEducationService {
   // private apiUrl = 'http://localhost:2603/ResumeEducation';
-    private apiUrl = environment.apiUrl+"/ResumeEducation";
+  private apiUrl = `${environment.apiUrl}/ResumeEducation`;
 
   constructor(private http:HttpClient) { }
 

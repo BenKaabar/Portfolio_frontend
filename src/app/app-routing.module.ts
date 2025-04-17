@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -37,7 +36,7 @@ const routes: Routes = [
     {path: "AboutMe", component:ResumeAboutMeComponent},
     {path: '', redirectTo: '/Education', pathMatch: 'full' }
   ]},
-  { path: '', redirectTo: '/Login', pathMatch: 'full' },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({

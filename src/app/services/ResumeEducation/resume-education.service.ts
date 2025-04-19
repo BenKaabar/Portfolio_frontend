@@ -8,7 +8,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ResumeEducationService {
-  // private apiUrl = 'http://localhost:2603/ResumeEducation';
   private apiUrl = `${environment.apiUrl}/ResumeEducation`;
 
   constructor(private http:HttpClient) { }

@@ -8,7 +8,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ServiceService {
-//  private apiUrl = 'http://localhost:2603/Service';
   private apiUrl = `${environment.apiUrl}/Service`;
 
   constructor(private http:HttpClient) { }

@@ -8,7 +8,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-  // private apiUrl = 'http://localhost:2603/auth';
     private apiUrl = `${environment.apiUrl}/Auth`;
   accessToken!: any;
   isAuthenticated : boolean = false;

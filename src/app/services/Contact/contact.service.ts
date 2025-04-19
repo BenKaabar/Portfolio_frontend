@@ -8,7 +8,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ContactService {
-  // private apiUrl = 'http://localhost:2603/Contact';
   private apiUrl = `${environment.apiUrl}/Contact`;
 
   constructor(private http:HttpClient) { }

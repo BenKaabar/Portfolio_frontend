@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://carefree-harmony-production.up.railway.app'
+  apiUrl: 'https://portfoliobackend-production-138c.up.railway.app//'
 };
